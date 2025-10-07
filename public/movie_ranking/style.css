@@ -1,0 +1,142 @@
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 10px; 
+    padding: 20px; 
+    border: 2.5px solid whitesmoke;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    background-size: cover;
+    color:whitesmoke; 
+    
+
+    }
+    
+.maintitle {
+
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+
+
+    header{
+    text-align: center;
+
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+section{
+
+
+}
+
+img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: auto;
+    object-fit: contain;   /* Show full image, may add letterboxing */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border: whitesmoke 2px solid;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+summary{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+nav{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+nav ul li {
+       margin: 3px 0;
+       font-size: 18px;
+       text-shadow: 1px 1px 2px #829794;
+}
+
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: dashed;
+    z-index: 5;
+}
+
+details nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+details[open] nav {
+    max-height: 500px; /* Adjust as needed for your content */
+}
